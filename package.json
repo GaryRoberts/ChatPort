@@ -1,7 +1,7 @@
 {
   "name": "video-chat-app",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "license": "MIT",
   "scripts": {
     "dev": "node src/server.js"
