@@ -8,7 +8,7 @@ const peer = new RTCPeerConnection({
 });
 
 // Connecting to socket
-const socket = io('http://localhost:3000');
+const socket = io('https://video-chat-app-project.herokuapp.com:3000');
 
 const onSocketConnected = async () => {
   const constraints = {
