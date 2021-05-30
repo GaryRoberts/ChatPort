@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:": "nodemon src/server.js" 
+    "start:": "node src/server.js" 
   },
   "keywords": [
     "example",
@@ -15,9 +15,7 @@
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-  },
+
   "engines": {
     "node": "14.x"
   }
