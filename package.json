@@ -1,19 +1,16 @@
 {
-  "homepage": "http://garyroberts.github.io/video-chat-app",
   "name": "video-chat-app",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "predeploy": "nodemon src/server.js",
-    "deploy": "gh-pages -d build"
+    "dev": "nodemon src/server.js"
   },
   "dependencies": {
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.0",
     "nodemon": "^2.0.4"
   }
 }
