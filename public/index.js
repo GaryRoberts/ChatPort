@@ -7,8 +7,9 @@ const peer = new RTCPeerConnection({
   ]
 });
 
+var port=process.env.PORT;
 // Connecting to socket
-const socket = io('http://localhost:'+process.env.PORT);
+const socket = io('http://localhost:'.port);
 
 const onSocketConnected = async () => {
   const constraints = {
