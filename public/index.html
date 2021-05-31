@@ -103,8 +103,9 @@ const peer = new RTCPeerConnection({
 
 // Connecting to socket
 const path = require('path');
-alert(path.resolve(process.cwd()));
-const socket = io(path.resolve(process.cwd()));
+const PORT = process.env.PORT || 3000;
+
+const socket = io('https://video-chat-app-project.herokuapp.com:'+PORT);
 
 const onSocketConnected = async () => {
   const constraints = {
