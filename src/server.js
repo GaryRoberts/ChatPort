@@ -6,16 +6,19 @@ const path = require('path');
 
 const PORT = process.env.PORT || 3000;
 
- const server = express()
- .use((req, res) => res.sendFile(path.resolve(process.cwd(), 'public/*')))
-   .listen(PORT, () => console.log(`Listening on ${PORT}`));
+//  const server = express()
+//  .use((req, res) => res.sendFile(path.resolve(process.cwd(), 'public/*')))
+//    .listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 
-const io = socketIO(server);
+// const io = socketIO(server);
 
 const app = express();
+const https = require('https').createServer(app);
+const io = require('socket.io')(https);
 
 app.use(express.static(path.join(__dirname, '../public')));
+
 
 let connectedUsers = [];
 
