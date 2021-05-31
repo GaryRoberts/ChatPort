@@ -4,8 +4,8 @@ const path = require('path');
 const app = express();
 var port=process.env.PORT;
 
-const https = require('https').createServer(app);
-const io = require('socket.io')(https);
+const http = require('https').createServer(app);
+const io = require('socket.io')(http);
 
 app.use(express.static(path.join(__dirname, '../public')));
 
@@ -46,6 +46,6 @@ io.on('connection', socket => {
 });
 
 
-https.listen(port, () => {
+http.listen(port, () => {
   console.log('listening on *:'+port);
 });
