@@ -9,9 +9,11 @@ Node js based video chat app created using socket.io for connection</br>
  `npm i && npm run dev`
 
 ## Usage
+
 Change the variable passed to socket.io from live to local to test locally</br>
 After you clone this repo to your pc, go to its root directory and run `npm install` to install its dependencies.</br>
 Once the dependencies are installed, you can run  `node src/server.js` to start the application. You will then be able to access it at localhost:3000</br>
 Once the server is running, open http://localhost:3000 in 2 separate tabs in your favourite browser.</br></br>
+
 Select ID of the user and click call.
 ---
