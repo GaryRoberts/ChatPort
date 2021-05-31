@@ -1,4 +1,7 @@
-Video Chat App
+## Video Chat App
+
+![image](https://user-images.githubusercontent.com/35618554/120240501-4f4e2800-c226-11eb-8957-48931aa70ec5.png)
+
 
 To run the example:
 
