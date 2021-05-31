@@ -16,7 +16,7 @@ const server = express()
   .listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 
-const socket = io(server);
+const socket = io("http://video-chat-app-project.herokuapp.com:"+PORT);
 
 const onSocketConnected = async () => {
   const constraints = {
