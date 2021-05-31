@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 var port=process.env.PORT;
 
-const http = require('https').createServer(app);
+const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 
 app.use(express.static(path.join(__dirname, '../public')));
