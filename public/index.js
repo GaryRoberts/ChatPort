@@ -1,3 +1,4 @@
+'use strict';
 // Creating the peer
 const peer = new RTCPeerConnection({
   iceServers: [
@@ -16,7 +17,7 @@ const server = express()
   .listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 
-const socket = io("http://video-chat-app-project.herokuapp.com:"+PORT);
+const socket = io(server);
 
 const onSocketConnected = async () => {
   const constraints = {
