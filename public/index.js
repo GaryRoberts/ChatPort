@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 const INDEX = 'public/index.html';
 
 const server = express()
-  .use((req, res) => res.sendFile(INDEX, { root: __dirname }))
+  .use((req, res) => res.sendFile(path.join(__dirname + '/dist/video-chat-app-project/public/index.html')))
   .listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 
