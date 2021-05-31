@@ -8,9 +8,15 @@ const peer = new RTCPeerConnection({
 });
 
 
-var port=process.env.PORT;
+const PORT = process.env.PORT || 3000;
+const INDEX = 'public/index.html';
 
-const socket = io('https://localhost:'+port);
+const server = express()
+  .use((req, res) => res.sendFile(INDEX, { root: __dirname }))
+  .listen(PORT, () => console.log(`Listening on ${PORT}`));
+
+
+const socket = io(server);
 
 const onSocketConnected = async () => {
   const constraints = {
