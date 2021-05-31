@@ -1,13 +1,10 @@
-# video-calling-app-example
+Video Chat App
 
 To run the example:
 
-`yarn && yarn dev`
- 
- or if you use npm:
- 
  `npm i && npm run dev`
  
+ Change the variable passed to socket.io fro live to local to test locally
  Once the server is running, open http://localhost:3000 in 2 separate tabs in your favourite browser.
  
  Select ID of the user and click call.
