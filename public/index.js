@@ -1,5 +1,6 @@
 'use strict';
 // Creating the peer
+alert("cool");
 const peer = new RTCPeerConnection({
   iceServers: [
     {
