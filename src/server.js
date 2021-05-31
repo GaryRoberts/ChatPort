@@ -17,7 +17,7 @@ const app = express();
 const https = require('https').createServer(app);
 const io = require('socket.io')(https);
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.resolve(process.cwd(), '../public')));
 
 
 let connectedUsers = [];
