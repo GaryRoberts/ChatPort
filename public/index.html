@@ -93,8 +93,6 @@
 
 <script>
 
-alert("this is working");
-// Creating the peer
 const peer = new RTCPeerConnection({
   iceServers: [
     {
@@ -103,15 +101,9 @@ const peer = new RTCPeerConnection({
   ]
 });
 
+// Connecting to socket
 const path = require('path');
-const PORT = process.env.PORT || 3000;
-
-const server = express()
-.use((req, res) => res.sendFile(path.resolve(process.cwd(), 'public')))
-  .listen(PORT, () => console.log(`Listening on ${PORT}`));
-
-
-const socket = io(server);
+const socket = io(path.resolve(process.cwd()));
 
 const onSocketConnected = async () => {
   const constraints = {
