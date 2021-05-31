@@ -1,6 +1,6 @@
 ## Video Chat App
 
-![](https://acquire.io/wp-content/uploads/2020/08/video-chat-pros-and-cons-1.png =250x250)
+<img src="https://user-images.githubusercontent.com/35618554/120242483-94745900-c22a-11eb-8226-7f7392ae1d2c.png" width="100" height="100">
 
 To run the example:
 
