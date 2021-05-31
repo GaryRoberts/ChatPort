@@ -1,6 +1,6 @@
 ## Video Chat App
 
-<img src="https://user-images.githubusercontent.com/35618554/120242483-94745900-c22a-11eb-8226-7f7392ae1d2c.png" width="100" height="100">
+<img src="https://user-images.githubusercontent.com/35618554/120242483-94745900-c22a-11eb-8226-7f7392ae1d2c.png" width="400" height="400">
 
 To run the example:
 
