@@ -13,3 +13,9 @@ Once the server is running, open http://localhost:3000 in 2 separate tabs in you
 
 Select ID of the user and click call
 
+## Demo
+
+Web version: https://video-chat-app-project.herokuapp.com/ </br>
+Android app version: </br>
+
+
