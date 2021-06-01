@@ -2,7 +2,7 @@
 
 Node js based video chat app created using socket.io for connection</br>
 
-<img src="https://user-images.githubusercontent.com/35618554/120263733-e84e6480-c261-11eb-800b-f08971e5f9dd.jpg" width="500" height="300">
+<img src="https://user-images.githubusercontent.com/35618554/120263733-e84e6480-c261-11eb-800b-f08971e5f9dd.jpg" width="650" height="320">
 
 ## Usage
 
