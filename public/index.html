@@ -87,9 +87,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
-<!--<script src="index.js"></script> -->
-
-
 
 <script>
 
@@ -103,10 +100,10 @@ const peer = new RTCPeerConnection({
 
 // Connecting to socket
 
-//const path = require('path');
-//const PORT = process.env.PORT || 3000;
+var local='http://localhost:3000';
+var live='https://video-chat-app-project.herokuapp.com/';
 
-const socket = io('https://video-chat-app-project.herokuapp.com/');
+const socket = io(live);
 
 const onSocketConnected = async () => {
   const constraints = {
