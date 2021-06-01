@@ -1,4 +1,4 @@
-## Video Chat App
+## ChatPort
 
 Node js based video chat app created using socket.io for connection</br>
 
