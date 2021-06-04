@@ -128,7 +128,7 @@
 
 /* Colors of the buttons*/
 .button-active, .selectors button:hover, .selectors button:active, .selectors button:focus{
-    color: #ff0000;
+    color: #11b819;
 }
 
 .button-inactive{
@@ -172,28 +172,28 @@
 
 <footer class="footer">
   <div id="buttonGroup" class="btn-group selectors" role="group" aria-label="Basic example">
-     <button id="home" type="button" class="btn btn-secondary button-active">
+    <button id="home" type="button" class="btn btn-secondary button-inactive">
+      <div class="selector-holder">
+         <i class="material-icons">home</i>
+         <span>Home</span>
+      </div>
+   </button>
+     <button id="video" type="button" class="btn btn-secondary button-inactive">
         <div class="selector-holder">
-           <i class="material-icons">home</i>
-           <span>Home</span>
+           <i class="material-icons">videocam-off</i>
+           <span>Camera off</span>
         </div>
      </button>
-     <button id="feed" type="button" class="btn btn-secondary button-inactive">
+     <button id="volume" type="button" class="btn btn-secondary button-inactive">
         <div class="selector-holder">
-           <i class="material-icons">view_list</i>
-           <span>Feed</span>
+           <i class="material-icons">volume-off</i>
+           <span>Audio off</span>
         </div>
      </button>
      <button id="create" type="button" class="btn btn-secondary button-inactive">
         <div class="selector-holder">
-           <i class="material-icons">create</i>
-           <span>Create</span>
-        </div>
-     </button>
-     <button id="account" type="button" class="btn btn-secondary button-inactive">
-        <div class="selector-holder">
-           <i class="material-icons">account_circle</i>
-           <span>Account</span>
+           <i class="material-icons">phone-disabled</i>
+           <span>Hangup</span>
         </div>
      </button>
   </div>
