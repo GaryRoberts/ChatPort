@@ -60,13 +60,88 @@
         .user-item--touched {
         background: linear-gradient(90deg, rgb(110, 42, 255) 0%, rgb(148, 98, 255) 100%);
         }
+
+
+
+        .footer {
+    position:fixed;
+     bottom: 0;
+     width: 100%;
+     height: 60px;
+     background-color: #f5f5f5;
+
+    border-top: 1px solid transparent;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar{
+    border-top: 1px solid transparent;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.group-container{
+    padding:0;
+    height:100%;
+}
+
+.selectors, .block{
+    height:100%;
+    width:100%;
+}
+
+.selectors button{
+    border: 0;
+    border-radius: 0;
+    background-color: #f8f9fa !important;
+    width:25%;
+    margin-left: 0;
+}
+
+.selectors button:active{
+    border:0;
+}
+
+.selectors button:focus{
+    border:0;
+    outline: 0;
+    box-shadow: 0 0 0 0px;
+}
+
+.active, .selector-holder{
+    display: flex;
+    flex-direction: column;
+}
+
+.inactive{
+    display: none;
+}
+
+.selector-holder span{
+    font-size: 0.8rem;
+}
+
+/* Colors of the buttons*/
+.button-active, .selectors button:hover, .selectors button:active, .selectors button:focus{
+    color: #ff0000;
+}
+
+.button-inactive{
+    color: #000;
+}
     </style>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/main.css">
+     <!-- Google Icons -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    
 </head>
 <body>
+   <!-- As a heading -->
+   <nav class="navbar fixed-top navbar-light bg-light">
+    <h2 class="navbar-brand mb-0">ChatPort</h2>
+ </nav>
+
 <div>
     <div id="userId"></div>
     <div class="remote-video">
@@ -91,24 +166,41 @@
 </div>
 
 
-<nav class ="navbar navbar-fixed-bottom navbar-inverse"  style="background-color:green">
-  <div class="container">
-      <div class="navbar-header">
-          <a class="navbar-brand" href="#">ChatPort</a>
-      </div>
-      <div>
-          <ul class="nav navbar-nav">
-              <li class="active"><a href="#"><i class="fa fa-microphone-slash"><br>Audio off</i></a></li>
-              <li> <a href="#"><i class="fa fa-phone"><br>Hang up</i></a></li>
-          </ul>
-      </div>
+
+<footer class="footer">
+  <div id="buttonGroup" class="btn-group selectors" role="group" aria-label="Basic example">
+     <button id="home" type="button" class="btn btn-secondary button-active">
+        <div class="selector-holder">
+           <i class="material-icons">home</i>
+           <span>Home</span>
+        </div>
+     </button>
+     <button id="feed" type="button" class="btn btn-secondary button-inactive">
+        <div class="selector-holder">
+           <i class="material-icons">view_list</i>
+           <span>Feed</span>
+        </div>
+     </button>
+     <button id="create" type="button" class="btn btn-secondary button-inactive">
+        <div class="selector-holder">
+           <i class="material-icons">create</i>
+           <span>Create</span>
+        </div>
+     </button>
+     <button id="account" type="button" class="btn btn-secondary button-inactive">
+        <div class="selector-holder">
+           <i class="material-icons">account_circle</i>
+           <span>Account</span>
+        </div>
+     </button>
   </div>
-</nav>
-
-
+</footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
 <script>
 
