@@ -145,16 +145,16 @@
     <h2 class="navbar-brand mb-0">ChatPort</h2>
  </nav>
 
-<div>
+ <!--<div>
     <div id="userId"></div>
-    <!-- <div class="remote-video">
+    <div class="remote-video">
         <div>Call:</div>
         <video id="remoteVideo" playsinline autoplay></video>
     </div>
     <div class="local-video">
         <div>Me:</div>
         <video id="localVideo" playsinline autoplay muted></video>
-    </div> -->
+    </div> 
 
     <div>
         Users:
@@ -166,16 +166,42 @@
     <div>
         <div id="call">Call</button>
     </div>
-</div>
+</div> -->
 
 
 <br><br><br>
 
  <!--Grid row-->
  <div class="row">
+
+    <!--Grid column-->
+  <div class="col-lg-4 col-md-4 mb-4">
+  
+    <div class="card">
+      <div class="card-header">
+        Users
+      </div>
+      <div class="card-body">
+          <div id="userId"></div>
+      
+          <div>
+              Users:
+          </div>
+          <div id="usersList">
+              No users connected
+          </div>
+      
+          <div>
+              <div id="call">Call</button>
+          </div>
+      </div>
+    </div>
+  
+  </div>
+  <!--Grid column-->
   
   <!--Grid column-->
-  <div class="col-lg-6 col-md-6 mb-6">
+  <div class="col-lg-4 col-md-4 mb-4">
   
     <div class="card">
       <div class="card-header">
@@ -190,7 +216,7 @@
   <!--Grid column-->
   
   <!--Grid column-->
-  <div class="col-lg-6 col-md-6 mb-6">
+  <div class="col-lg-4 col-md-4 mb-4">
   
     <div class="card">
       <div class="card-header">
